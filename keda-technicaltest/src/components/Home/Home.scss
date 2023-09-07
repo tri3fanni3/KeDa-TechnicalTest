@@ -1,0 +1,37 @@
+.home-container{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .homepage {
+    .homepage-title {
+      &__span {
+        color: #6AE1FE;
+      }
+    }
+  }
+
+  .home-illustrator {
+    position: absolute;
+    bottom: 12%;
+    left: 10%;
+    width: 15%;
+    height: 15%;
+    min-width: 100px;
+    min-height: 100px;
+
+    @media (max-width: 640px) {
+      display: none;
+    }
+  }
+
+  .home-background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    width: 50%;
+    min-width: 300px;
+  }
+}
